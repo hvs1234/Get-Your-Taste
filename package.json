@@ -1,0 +1,16 @@
+{
+  "name": "get-your-taste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.2",
+    "electron-builder": "^24.9.1"
+  }
+}

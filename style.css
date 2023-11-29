@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+body::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('Images/body.jpg') no-repeat center center/cover;
+    z-index: -2;
+    filter: brightness(1);
+}
+
+.head
+{
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.head h1
+{
+    color: aquamarine;
+    font-weight: 100;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+}
+.head h1 span,i
+{
+    color: rgb(255, 127, 152);
+    font-family: 'Mate SC';
+}
+.head-nav a
+{
+    margin: 0 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+.head a i
+{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    text-shadow: 0 2px 2px rgb(9, 8, 52);
+}
+.head-nav a i:hover
+{
+    color: yellow;
+}
+
+.head-content::before
+{
+    width: 100%;
+    height: 50%;
+    content: '';
+    background: url('Images/home-head-img.jpg') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.head-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-data
+{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head-data h1
+{
+    color: white;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.head-data h1 i
+{
+    color: burlywood;
+}
+.head-data p
+{
+    color: wheat;
+    font-size: 1.5rem;
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    text-shadow: 0 2px 2px rgb(7, 7, 56);
+    margin-bottom: 2rem;
+}
+.head-data button
+{
+    border-radius: 20px;
+    padding: 1rem 4rem;
+    border: 0;
+    background-color: rgb(79, 36, 21);
+}
+.head-data button a
+{
+    text-decoration: none;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    color: orange;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 2px rgb(7, 7, 42);
+}
+.head-data button a i
+{
+    color: orange;
+}
+.head-data button:hover
+{
+    background-color: rgb(111, 53, 32);
+    cursor: pointer;
+}
+
+.about
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 2rem;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    padding: 1.5rem 1.5rem;
+}
+.about-data .line
+{
+    background-color: lime;
+    width: 13rem;
+    margin-top: 0.2rem;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+.about-data
+{
+    display: flex;
+    flex-direction: column;
+}
+.about-data h1
+{
+    color: aquamarine;
+    font-weight: 100;
+    font-family: 'Josefin Sans';
+    letter-spacing: 2px;
+}
+.about-data h1 i
+{
+    color: rgb(57, 112, 214);
+}
+.about-data p strong
+{
+    color: wheat;
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-shadow: 0 2px 2px black;
+}
+.about-data p
+{
+    margin-bottom: 1rem;
+    text-align: justify;
+    margin-right: 2rem;
+    color: white;
+    font-family: 'Dosis';
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.about-data p strong i
+{
+    color: lightgreen;
+}
+.about-img img
+{
+    width: 25rem;
+    height: 32rem;
+    filter: brightness(0.8);
+    border-radius: 20px;
+}
+
+.services
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(39, 38, 38);
+    padding: 2rem 2rem;
+    margin: 0 2rem;
+    border-radius: 20px;
+}
+.service-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.service-data h1
+{
+    font-family: 'Josefin Sans';
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-shadow: 0 2px 2px black;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+.service-data h1 i
+{
+    color: lightseagreen;
+}
+.service-data p
+{
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.service-data .line
+{
+    background-color: aquamarine;
+    width: 20rem;
+    height: 1px;
+    margin-bottom: 2rem;
+}
+
+.service-boxes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+    border-radius: 20px;
+    background-color: rgb(59, 59, 58);
+    padding: 2rem 2.2rem;
+    cursor: grab;
+}
+.service-box:hover
+{
+    background-color: rgb(62, 61, 61);
+}
+.service-box i
+{
+    color: rgb(102, 155, 189);
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 5px black;
+}
+.service-box h3
+{
+    font-weight: 100;
+    font-family: 'Mate SC';
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.footer
+{
+    background-color: black;
+    padding: 1rem 0;
+    margin-top: 5rem;
+}
+.footer h1
+{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Mate SC';
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 2px rgb(109, 109, 122);
+}
+.footer h1 i
+{
+    color: palevioletred;
+}
+
+.menu-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: rgb(36, 35, 35);
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+}
+.menu-head-type
+{
+    display: flex;
+}
+.menu-head-type a
+{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 2px rgb(9, 9, 30);
+}
+.menu-head-type a i
+{
+    color: whitesmoke;
+}
+.menu-head-type a:hover, .menu-head-type a i:hover
+{
+    color: yellow;
+}
+.menu-head-nav
+{
+    display: flex;
+}
+.menu-head-nav a
+{
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-shadow: 0 2px 2px rgb(12, 12, 45);
+}
+.menu-head-nav a i
+{
+    color: whitesmoke;
+}
+.menu-head-nav a i:hover
+{
+    color: yellow;
+}
+.menu-container
+{
+    display: flex;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 0rem 2rem;
+    position: relative;
+    top: 6rem;
+    cursor: grab;
+}
+.menu-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.2rem 1.2rem;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    box-shadow: 0 2px 2px black;
+    background-color: rgb(48, 46, 46);
+}
+.menu-box:hover
+{
+    background-color: rgb(54, 51, 51);
+}
+.menu-box img   
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.menu-box p
+{
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 2px rgb(8, 8, 29);
+    color: whitesmoke;
+    margin-top: 0.5rem;
+}
+#money
+{
+    margin-bottom: 0;
+}
+#lunch
+{
+    margin-top: 2rem;
+}
+#evening
+{
+    margin-top: 2rem;
+}
+#dinner
+{
+    margin-top: 2rem;
+}
+#menu-footer
+{
+    margin-top: 8rem;
+}
+
+.buy-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: rgb(33, 31, 31);
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    align-items: center;
+}
+.buy-container p
+{
+    font-family: 'Mate SC';
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-shadow: 0 2px 2px rgb(13, 13, 39);
+    color: whitesmoke;
+    position: relative;
+    top: 0.5rem;
+}
+.buy-container p span
+{
+    color: rgb(139, 241, 236);
+}
+.buy-container p i
+{
+    color: lightgreen;
+}
+.buy-nav a
+{
+    text-decoration: none;
+}
+.buy-nav a i
+{
+    color: whitesmoke;
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+}
+.buy-nav a i:hover
+{
+    color: yellow;
+}
+.buy-data
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 2rem;
+    position: relative;
+    top: 6rem;
+}
+.buy-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+}
+.buy-content h3,p
+{
+    color: whitesmoke;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.buy-content h3
+{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.buy-content p
+{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.buy-content .buy-link
+{
+    display: flex;
+    align-items: center;
+}
+.buy-content .buy-link i
+{
+    margin: 0 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+.buy-content .buy-link i:hover
+{
+    color: aqua;
+}
+.buy-form form
+{
+    background-color: rgb(42, 42, 116);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+.buy-form form h3
+{
+    color: aquamarine;
+    font-family: 'Mate SC';
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 2px #000;
+}
+.buy-form form h3 span
+{
+    color: yellow;
+    font-family: 'Mate SC';
+    font-weight: 100;
+}
+.buy-form form h3 i
+{
+    color: goldenrod;
+}
+.input-here
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-here label
+{
+    color: whitesmoke;
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.input-here label i
+{
+    color: whitesmoke;
+}
+.input-here input,textarea
+{
+    border: 0;
+    background: transparent;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    outline: 0;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.input-here .line
+{
+    width: 20rem;
+    height: 1px;
+    background-color: whitesmoke;
+    margin-bottom: 2rem;
+}
+.input-here button
+{
+    padding: 1rem 4rem;
+    background-color: rgb(31, 22, 60);
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 2px black;
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.input-here button i
+{
+    color: whitesmoke;
+}
+.input-here button:hover
+{
+    color: yellow;
+    background-color: rgb(34, 29, 51);
+}
+#buy-footer
+{
+    margin-top: 8rem;
+}
